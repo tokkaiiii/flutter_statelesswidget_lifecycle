@@ -5,6 +5,27 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: CodeFactoryWidget(),
+    );
+
   }
 }
+
+class CodeFactoryWidget extends StatelessWidget {
+  CodeFactoryWidget({super.key}){
+    print('-- 생성자 --');
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    print('-- 빌드 --');
+    return Container(
+      width: 50.0,
+      height: 50.0,
+      color: Colors.red,
+
+    );
+  }
+}
+
